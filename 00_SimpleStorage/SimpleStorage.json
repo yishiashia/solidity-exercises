@@ -1,0 +1,50 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "Set",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "data",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "x",
+          "type": "uint256"
+        }
+      ],
+      "name": "set",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "608060405234801561001057600080fd5b5061019b806100206000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c806360fe47b11461003b57806373d4a13a14610057575b600080fd5b610055600480360381019061005091906100e8565b610075565b005b61005f6100cd565b60405161006c9190610124565b60405180910390f35b806000819055503373ffffffffffffffffffffffffffffffffffffffff167ffd28ec3ec2555238d8ad6f9faf3e4cd10e574ce7e7ef28b73caa53f9512f65b9826040516100c29190610124565b60405180910390a250565b60005481565b6000813590506100e28161014e565b92915050565b6000602082840312156100fe576100fd610149565b5b600061010c848285016100d3565b91505092915050565b61011e8161013f565b82525050565b60006020820190506101396000830184610115565b92915050565b6000819050919050565b600080fd5b6101578161013f565b811461016257600080fd5b5056fea264697066735822122018292ffb66327226e7b9b380de61d18805ae529e9db21f5e9db1f2562f97e74964736f6c63430008070033"
+}

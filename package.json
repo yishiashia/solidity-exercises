@@ -1,0 +1,24 @@
+{
+  "name": "solidity-exercises",
+  "version": "1.0.0",
+  "description": "[![Solidity](https://img.shields.io/badge/Solidity-%5E0.8.7-orange.svg)](https://docs.soliditylang.org/en/v0.8.7/)",
+  "main": "compile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yishiashia/solidity-exercises.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yishiashia/solidity-exercises/issues"
+  },
+  "homepage": "https://github.com/yishiashia/solidity-exercises#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "solc": "^0.8.7-fixed",
+    "web3": "^1.5.2"
+  }
+}
