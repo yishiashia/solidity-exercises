@@ -24,11 +24,11 @@ async function main(prefix_fn) {
   // Using the signing account to deploy the contract
   const contract = new web3.eth.Contract(abi);
   contract.options.data = bytecode;
-  const deployTx = contract.deploy();
+  const deployTx = contract.deploy({ arguments: [50] });  // <-- Solidity constructor params, initial 50 token supply
   const deployedContract = await deployTx
     .send({
       from: signer.address,
-      gas: await deployTx.estimateGas(),
+      gas: 2000000,  // <-- increase gas fee to deploy this contract
     })
     .once("transactionHash", (txhash) => {
       console.log(`Mining deployment transaction ...`);
@@ -42,9 +42,4 @@ async function main(prefix_fn) {
 }
 
 require("dotenv").config();
-if( Array.isArray(process.argv) && process.argv.length > 2 ) {
-  main(process.argv[2]).then(() => process.exit(0));
-} else {
-  console.log("Not specify solidity file")
-  process.exit()
-}
+main('SimpleToken')

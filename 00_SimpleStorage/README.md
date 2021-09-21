@@ -2,17 +2,17 @@
 
 ## generate .json, .abi and the binary bytecode of this contract
 ```
-node ../compile.js
+node ../compile.js SimpleStorage
 solcjs SimpleStorage.sol --bin --abi
 ```
 
 ## deploy to the chain
 ```
-node ../deploy_contract.js
+node deploy.js
 ```
 
 ## call this contract
 ```
-node call_contract.js
+node call.js
 ```
 
