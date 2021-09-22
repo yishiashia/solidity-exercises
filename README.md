@@ -6,7 +6,7 @@ To using this repository to compile and deploy Solidity contract, it is recommen
 
 After that, modify the `.env` file on each exercise folder, then you can run the scripts in the folder to deploy and call the smart contract.
 
-:warning: **Remember to use TestNet such as <b>Rinkbey</b> in practice.**
+:warning: **Remember to use TestNet such as <b>Rinkbey</b> for practice purposes.**
 
 ## Compile
 Using solc-js to compile the smart contracts
